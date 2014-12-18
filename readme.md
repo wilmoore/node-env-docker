@@ -10,7 +10,7 @@
 
 ###### run
 
-    $ env-docker run
+    $ env-docker run -- --rm -ti $(basename $PWD)
 
 ## Debugging
 
