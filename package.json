@@ -30,7 +30,7 @@
     }
   ],
   "scripts": {
-    "lint": "jshint *.js",
+    "lint": "jshint bin lib",
     "test": "npm run lint",
     "develop": "rerun-script"
   },
