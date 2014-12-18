@@ -1,0 +1,32 @@
+#!/usr/bin/env node
+'use strict';
+
+/*!
+ * imports.
+ */
+
+var program = require('commander');
+var version = require('../package').version;
+
+/*!
+ * imports (local).
+ */
+
+var run = require('../lib/cmd/run');
+
+// version.
+
+program
+  .version(version);
+
+// transform input body JSON array to a one flat JSON object per line.
+
+program
+  .command('run')
+  .description('Run a docker container with environment variables populated via .env.')
+  .action(run);
+
+// parse.
+
+program
+  .parse(process.argv);
