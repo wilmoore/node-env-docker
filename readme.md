@@ -12,11 +12,17 @@
 
     $ env-docker run -- --rm -ti $(basename $PWD)
 
-## Debugging
+This can be conveniently used via `npm run-scripts` as depicted below:
 
-###### show full docker command
+    "scripts": {
+      "docker:build": "docker build -t $npm_package_name .",
+      "docker:run": "eval $(env-docker run -- -p 3000:3000 --rm -ti $npm_package_name) || true",
+      "predocker:run": "npm run docker:build",
+    },
 
-    $ DEBUG=env-docker:run env-docker run
+To re-build and run, just type the following:
+
+    $ npm run docker:run
 
 ## License
 
