@@ -2,9 +2,9 @@
 
 [![Build Status](http://img.shields.io/travis/wilmoore/node-env-docker.svg)](https://travis-ci.org/wilmoore/node-env-docker) [![NPM version](http://img.shields.io/npm/v/env-docker.svg)](https://www.npmjs.org/package/env-docker) [![NPM downloads](http://img.shields.io/npm/dm/env-docker.svg)](https://www.npmjs.org/package/env-docker) [![LICENSE](http://img.shields.io/npm/l/env-docker.svg)](license)
 
-> Run a docker command with environment variables populated via .env.
+> Prepare a docker command with environment variables populated via `.env`.
 
-    $ npm install env-docker --save
+    $ npm install env-docker --save-dev
 
 ## Available Commands
 
@@ -27,3 +27,4 @@ To re-build and run, just type the following:
 ## License
 
   [MIT](license)
+
