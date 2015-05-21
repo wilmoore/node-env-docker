@@ -1,4 +1,5 @@
 # env-docker
+> NOTE: YOU NO LONGER NEED THIS AS YOU CAN NOW PROVIDE YOUR `.env` FILE VIA `docker-compose.yml` WITH `env_file`. YOU THEN TYPE `docker-compose up` TO START YOUR APPLICATION.
 
 [![Build Status](http://img.shields.io/travis/wilmoore/node-env-docker.svg)](https://travis-ci.org/wilmoore/node-env-docker) [![NPM version](http://img.shields.io/npm/v/env-docker.svg)](https://www.npmjs.org/package/env-docker) [![NPM downloads](http://img.shields.io/npm/dm/env-docker.svg)](https://www.npmjs.org/package/env-docker) [![LICENSE](http://img.shields.io/npm/l/env-docker.svg)](license)
 
